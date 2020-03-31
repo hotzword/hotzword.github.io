@@ -3,10 +3,10 @@ document.write('<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><
 			<h1 id="colorlib-logo"><a href="index.html">Hotzword<span>.</span> Food Blog </a> <a href="index.html"><span>“好吃娃”</span> </a></h1>\
 			<nav id="colorlib-main-menu" role="navigation">\
 				<ul>\
-					<li ><a href="index.html">Home</a></li>\
-					<li class="colorlib-active"><a href="index.html#recipe">Recipe</a></li>\
-					<li><a href="restaurant.html">Restaurant</a></li>\
-					<li><a href="about.html">About</a></li>\
+					<li ><a href="../index.html">Home</a></li>\
+					<li class="colorlib-active"><a href="../index.html#recipe">Recipe</a></li>\
+					<li><a href="../restaurant.html">Restaurant</a></li>\
+					<li><a href="../about.html">About</a></li>\
 			</nav>\
 			<div class="colorlib-footer">\
 				<p> For more about me, welcom to my <a href="https://yuehu9.github.io">personal website</a> </p>\
