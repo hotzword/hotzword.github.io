@@ -9,7 +9,6 @@ document.write('<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><
 					<li><a href="../about.html">About</a></li>\
 			</nav>\
 			<div class="colorlib-footer">\
-				<p> For more about me, welcom to my <a href="https://yuehu9.github.io">personal website</a> </p>\
 				<ul>\
 					<li><a href="https://www.instagram.com/yue69999"><i class="icon-instagram"></i></a></li>\
 					</ul>\
