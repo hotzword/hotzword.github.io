@@ -10,7 +10,7 @@ document.write('<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><
 			</nav>\
 			<div class="colorlib-footer">\
 				<ul>\
-					<li><a href="https://instagram.com/hotzword?igshid=1u72asz96wqj9"></i></a></li>\
+					<li><a href="https://instagram.com/hotzword?igshid=1u72asz96wqj9"><i class="icon-instagram"></i></a></li>\
 					</ul>\
 			</div>\
 		</aside> <!-- END COLORLIB-ASIDE -->\
