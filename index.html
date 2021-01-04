@@ -1,56 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Hotzword food blog</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style_yummy.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+---
+layout: default
+---
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
-
-
-
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-
-    <link rel="stylesheet" href="css/aos.css">
-
-    <link rel="stylesheet" href="css/ionicons.min.css">
-
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166093155-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-166093155-1');
-    </script>
-    <!-- google analytics end -->
-    
-  </head>
-  <body>
-
-	<div id="colorlib-page">
-		      <!--    nevigatin sidebar-->
-        <script src="js/sidebar.js"></script>
-
-        <!--   Main content-->
-		<div id="colorlib-main">
 			<div class="hero-wrap js-fullheight" style="background-image: url(images/1.jpg);" data-stellar-background-ratio="0.5">
 				<div class="overlay"></div>
 				<div class="js-fullheight d-flex justify-content-center align-items-center">
@@ -106,356 +57,48 @@
         </div>
     </section> -->
     <!-- ****** Categories Area End ****** -->
+    <ul>
 
 
  				<h2 id="recipe" class="mb-3 font-weight-bold">Recipes </h2>
-                        
+                    {% for post in site.posts %}
                         <!-- Single Post -->
                         <div class="col-12">
                             <div class="list-blog single-post d-sm-flex wow fadeInUpBig" data-wow-delay=".4s">
                                 <!-- Post Thumb -->
-                                <div class="post-thumb">
-                                    <img src="images/recipe/fanqiechaodan.JPG" alt="..">
-                                </div>
+                                {% if post.intro_pic!= nil %}
+                                    <div class="post-thumb">
+                                        <img src=" {{base_url}}/{{ post.intro_pic}}" alt="...">
+                                    </div>
+                                {% else %}
+                                    <div class="post-thumb">
+                                        <img src=" {{base_url}}/{{ post.pic}}" alt="...">
+                                    </div>
+                                {% endif %}
                                 <!-- Post Content -->
                                 <div class="post-content">
                                     <div class="post-meta d-flex">
                                         <div class="post-author-date-area d-flex">
                                             <!-- Post Author -->
                                             <div class="post-author">
-                                                <a href="#">Easy</a>
+                                                <a >{{ post.level }}</a>
                                             </div>
                                             <!-- Post Date -->
                                             <div class="post-date">
-                                                <a href="#">20 min</a>
+                                                <a>{{ post.time }}</a>
                                             </div>
                                         </div>
-                                        
                                     </div>
-                                    <a href="recipes/fanqiechaodan.html">
-                                        <h4 class="post-headline">Tomato and Egg Stir-Fry | 番茄炒蛋</h4>
+                                    <a href="{{ post.url }}">
+                                        <h4 class="post-headline">{{ post.title }}</h4>
                                     </a>
-                                    <p>Quick and easy! One of the entry-level Chinese dishes to try. With general tips on stir-fires. </p>
+                                    <p>{{ post.intro }}</p>
                                     <!-- <a href="#" class="read-more">Continue Reading..</a> -->
                                 </div>
                             </div>
                         </div>
-
-
-                        <!-- Single Post -->
-                        <div class="col-12">
-                            <div class="list-blog single-post d-sm-flex wow fadeInUpBig" data-wow-delay=".4s">
-                                <!-- Post Thumb -->
-                                <div class="post-thumb">
-                                    <img src="images/recipe/laziji1.jpg" alt="..">
-                                </div>
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <div class="post-meta d-flex">
-                                        <div class="post-author-date-area d-flex">
-                                            <!-- Post Author -->
-                                            <div class="post-author">
-                                                <a href="#">Hard</a>
-                                            </div>
-                                            <!-- Post Date -->
-                                            <div class="post-date">
-                                                <a href="#">20 min + 3h prep</a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <a href="recipes/laziji.html">
-                                        <h4 class="post-headline">Chongqing spicy chicken | 辣子鸡 (Laziji) </h4>
-                                    </a>
-                                    <p> Super hot rice killer. </p>
-                                    <!-- <a href="#" class="read-more">Continue Reading..</a> -->
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Single Post -->
-                        <div class="col-12">
-                            <div class="list-blog single-post d-sm-flex wow fadeInUpBig" data-wow-delay=".4s">
-                                <!-- Post Thumb -->
-                                <div class="post-thumb">
-                                    <img src="images/recipe/hongjiuli1.jpg" alt="..">
-                                </div>
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <div class="post-meta d-flex">
-                                        <div class="post-author-date-area d-flex">
-                                            <!-- Post Author -->
-                                            <div class="post-author">
-                                                <a href="#">Entry</a>
-                                            </div>
-                                            <!-- Post Date -->
-                                            <div class="post-date">
-                                                <a href="#">3 - 24 hours</a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <a href="recipes/hongjiuli.html">
-                                        <h4 class="post-headline">Red wine poached pear | 红酒炖梨</h4>
-                                    </a>
-                                    <p>Perfect combination, perfect taste. </p>
-                                    <!-- <a href="#" class="read-more">Continue Reading..</a> -->
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Single Post -->
-                        <div class="col-12">
-                            <div class="list-blog single-post d-sm-flex wow fadeInUpBig" data-wow-delay=".4s">
-                                <!-- Post Thumb -->
-                                <div class="post-thumb">
-                                    <img src="images/recipe/chaofan.jpg" alt="..">
-                                </div>
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <div class="post-meta d-flex">
-                                        <div class="post-author-date-area d-flex">
-                                            <!-- Post Author -->
-                                            <div class="post-author">
-                                                <a href="#">Medium</a>
-                                            </div>
-                                            <!-- Post Date -->
-                                            <div class="post-date">
-                                                <a href="#">30 min</a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <a href="recipes/chaofan.html">
-                                        <h4 class="post-headline">Hotzword Fried Rice | 什锦炒饭</h4>
-                                    </a>
-                                    <p> Keep everything dry and you will get the perfect fried rice.</p>
-                                    <!-- <a href="#" class="read-more">Continue Reading..</a> -->
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Single Post -->
-                        <div class="col-12">
-                            <div class="list-blog single-post d-sm-flex wow fadeInUpBig" data-wow-delay=".4s">
-                                <!-- Post Thumb -->
-                                <div class="post-thumb">
-                                    <img src="images/recipe/mayishangshu.JPG" alt="..">
-                                </div>
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <div class="post-meta d-flex">
-                                        <div class="post-author-date-area d-flex">
-                                            <!-- Post Author -->
-                                            <div class="post-author">
-                                                <a href="#">Medium</a>
-                                            </div>
-                                            <!-- Post Date -->
-                                            <div class="post-date">
-                                                <a href="#">25 min</a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <a href="recipes/mayishangshu.html">
-                                        <h4 class="post-headline">Ants climbing a tree (fried vermicelli noodles with ground meat) | 蚂蚁上树</h4>
-                                    </a>
-                                    <p>Brought back the taste in my childhood memory with this recipe.</p>
-                                    <!-- <a href="#" class="read-more">Continue Reading..</a> -->
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Single Post -->
-                        <div class="col-12">
-                            <div class="list-blog single-post d-sm-flex wow fadeInUpBig" data-wow-delay=".4s">
-                                <!-- Post Thumb -->
-                                <div class="post-thumb">
-                                    <img src="images/recipe/lurou.jpg" alt="..">
-                                </div>
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <div class="post-meta d-flex">
-                                        <div class="post-author-date-area d-flex">
-                                            <!-- Post Author -->
-                                            <div class="post-author">
-                                                <a href="#">Hard</a>
-                                            </div>
-                                            <!-- Post Date -->
-                                            <div class="post-date">
-                                                <a href="#">3 hours</a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <a href="recipes/lurou.html">
-                                        <h4 class="post-headline">Chinese Marinated Beef | 卤牛肉</h4>
-                                    </a>
-                                    <p>Breaking! Master chief Kun shares his secret recipe for Chines marinated beef for the first time! </p>
-                                    <!-- <a href="#" class="read-more">Continue Reading..</a> -->
-                                </div>
-                            </div>
-                        </div>
-
-         <!-- Single Post -->
-                        <div class="col-12">
-                            <div class="list-blog single-post d-sm-flex wow fadeInUpBig" data-wow-delay=".4s">
-                                <!-- Post Thumb -->
-                                <div class="post-thumb">
-                                    <img src="images/recipe/kaoyang1.jpg" alt="..">
-                                </div>
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <div class="post-meta d-flex">
-                                        <div class="post-author-date-area d-flex">
-                                            <!-- Post Author -->
-                                            <div class="post-author">
-                                                <a href="#">Medium</a>
-                                            </div>
-                                            <!-- Post Date -->
-                                            <div class="post-date">
-                                                <a href="#">35 min</a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <a href="recipes/kaoyang.html">
-                                        <h4 class="post-headline">Roasted Lamb Chop | 烤羊排</h4>
-                                    </a>
-                                    <p> Crispy outside and juicy inside. </p>
-                                    <!-- <a href="#" class="read-more">Continue Reading..</a> -->
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Single Post -->
-                        <div class="col-12">
-                            <div class="list-blog single-post d-sm-flex wow fadeInUpBig" data-wow-delay=".4s">
-                                <!-- Post Thumb -->
-                                <div class="post-thumb">
-                                    <img src="images/recipe/zhengdan.jpg" alt="..">
-                                </div>
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <div class="post-meta d-flex">
-                                        <div class="post-author-date-area d-flex">
-                                            <!-- Post Author -->
-                                            <div class="post-author">
-                                                <a href="#">Entry</a>
-                                            </div>
-                                            <!-- Post Date -->
-                                            <div class="post-date">
-                                                <a href="#">3-10 min</a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <a href="recipes/zhengdan.html">
-                                        <h4 class="post-headline">Steamed egg |  蒸蛋</h4>
-                                    </a>
-                                    <p>My newly discovered favorate quick-hand dish. Emulate the taste of milky silky pudding, with zero additive. </p>
-                                    <!-- <a href="#" class="read-more">Continue Reading..</a> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Post -->
-                        <div class="col-12">
-                            <div class="list-blog single-post d-sm-flex wow fadeInUpBig" data-wow-delay=".4s">
-                                <!-- Post Thumb -->
-                                <div class="post-thumb">
-                                    <img src="images/recipe/tangcupaigu.jpg" alt="..">
-                                </div>
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <div class="post-meta d-flex">
-                                        <div class="post-author-date-area d-flex">
-                                            <!-- Post Author -->
-                                            <div class="post-author">
-                                                <a href="#">Medium</a>
-                                            </div>
-                                            <!-- Post Date -->
-                                            <div class="post-date">
-                                                <a href="#">1 hour</a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <a href="recipes/tangcupaigu.html">
-                                        <h4 class="post-headline">Sweet and sour pork rib | 糖醋排骨</h4>
-                                    </a>
-                                    <p>A simple foolproof version for this popular dish! </p>
-                                    <!-- <a href="#" class="read-more">Continue Reading..</a> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Post -->
-                        <div class="col-12">
-                            <div class="list-blog single-post d-sm-flex wow fadeInUpBig" data-wow-delay=".4s">
-                                <!-- Post Thumb -->
-                                <div class="post-thumb">
-                                    <img src="images/recipe/hongshaorou.jpg" alt="..">
-                                </div>
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <div class="post-meta d-flex">
-                                        <div class="post-author-date-area d-flex">
-                                            <!-- Post Author -->
-                                            <div class="post-author">
-                                                <a href="#">Medium</a>
-                                            </div>
-                                            <!-- Post Date -->
-                                            <div class="post-date">
-                                                <a href="#">1 hour</a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <a href="recipes/hongshaorou.html">
-                                        <h4 class="post-headline">Braised Beef | 红烧牛肉</h4>
-                                    </a>
-                                    <p>Classic home-style dish. One of my favorite everyday meal. </p>
-                                    <!-- <a href="#" class="read-more">Continue Reading..</a> -->
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Single Post -->
-                        <div class="col-12">
-                            <div class="list-blog single-post d-sm-flex wow fadeInUpBig" data-wow-delay=".4s">
-                                <!-- Post Thumb -->
-                                <div class="post-thumb">
-                                    <img src="images/recipe/mpdf.jpg" alt="..">
-                                </div>
-                                <!-- Post Content -->
-                                <div class="post-content">
-                                    <div class="post-meta d-flex">
-                                        <div class="post-author-date-area d-flex">
-                                            <!-- Post Author -->
-                                            <div class="post-author">
-                                                <a >Hard</a>
-                                            </div>
-                                            <!-- Post Date -->
-                                            <div class="post-date">
-                                                <a >20 min</a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    <a href="recipes/mapotofu.html">
-                                        <h4 class="post-headline">Mapo Tofu |  麻婆豆腐</h4>
-                                    </a>
-                                    <p>A popular dish in Chinese restaurants. A must-try. </p>
-                                    <!-- <a href="#" class="read-more">Continue Reading..</a> -->
-                                </div>
-                            </div>
-                        </div>
+                    {% endfor %}
+                   
 
 
                 <!-- ****** disqus Area begin ****** -->
@@ -694,45 +337,3 @@
 	    		</div>
 	    	</div>
 	    </section>
-	    <footer class="ftco-footer ftco-bg-dark ftco-section">
-          <div class="container px-md-5">
-            
-            <div class="row">
-              <div class="col-md-12">
-
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-              </div>
-            </div>
-          </div>
-        </footer>
-		</div><!-- END COLORLIB-MAIN -->
-	</div><!-- END COLORLIB-PAGE -->
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/bootstrap-datepicker.js"></script>
-  <script src="js/jquery.timepicker.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="js/google-map.js"></script>
-  <script src="js/main.js"></script>
-
-
-    
-  </body>
-</html>

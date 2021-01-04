@@ -1,47 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Hotzword Food blog</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/style_yummy.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+---
+layout: default
+title:  Steamed egg |  蒸蛋
+date:   2019-7-18
+pic:    ../images/recipe/zhengdan.jpg
+intro_pic: 
+intro: My newly discovered favorate quick-hand dish. Emulate the taste of milky silky pudding, with zero additive.
+level: Entry
+time: 3-10 min
 
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
-
-
-
-    <link rel="stylesheet" href="../css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="../css/animate.css">
-    
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="../css/magnific-popup.css">
-
-    <link rel="stylesheet" href="../css/aos.css">
-
-    <link rel="stylesheet" href="../css/ionicons.min.css">
-
-    <link rel="stylesheet" href="../css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="../css/jquery.timepicker.css">
-
-    
-    <link rel="stylesheet" href="../css/flaticon.css">
-    <link rel="stylesheet" href="../css/icomoon.css">
-    <link rel="stylesheet" href="../css/style.css">
-    
-  </head>
-  <body>
-
-	<div id="colorlib-page">
-	    <!--    nevigatin sidebar-->
-        <script src="../js/sidebar_sub.js"></script>
-
-        <!--   Main content-->
-		<div id="colorlib-main">
-			
-			<section class="ftco-section blog_area section_padding_0_80">
+tags:
+    - Egg
+    - Home style
+---
+<section class="ftco-section blog_area section_padding_0_80">
 	    	<div class="container justify-content-center">
 	    		<div class="row">
 	    			<div class="col-lg-12 ftco-animate">
@@ -49,7 +20,7 @@
 
                 <h2 class="mb-3 font-weight-bold">Steamed egg |  蒸蛋</h2>
 
-                <img src="../images/recipe/zhengdan.jpg" alt="Steamed egg" style="width:100%; height: auto;">
+                <img src="{{base_url}}/../images/recipe/zhengdan.jpg" alt="Steamed egg" style="width:100%; height: auto;">
 
                      <p>For this dish, I have two versions. I have always sticked to the first version of 3 min microwave, with is supper convenient for breakfast or dinner. Until One day our magic chief Kun showed me the second version, 10 min steam on the pot. I was totally amazed. It's like the ugly duckling turning white swan.  It's the same egg mixture, but when you take your time to treat it, the liquid mixture slowly condenses to a pudding texture. Looking jiggly on the spoon and melting on your tongue, you'll be impressed.  </p>
 
@@ -115,7 +86,7 @@
 
           <h3 class="mb-3 mt-5 font-weight-bold">Steamer version - egg pudding texture</h3>
           
-          <img src="../images/recipe/zhengdan2.jpeg" alt="Steamed egg" style="width:60%; height: auto;">
+          <img src="{{base_url}}/../images/recipe/zhengdan2.jpeg" alt="Steamed egg" style="width:60%; height: auto;">
           
               <div class="single-preparation-step d-flex">
 
@@ -153,30 +124,6 @@
 	            </div>
 	                  
 
-                <!-- ****** disqus Area begin ****** -->
-                        <div id="disqus_thread"></div>
-                            <script>
-
-                            /**
-                            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-                            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-                            
-                            var disqus_config = function () {
-                            this.page.url = "https://hotzword.github.io/recipes/zhengdan.html"  // Replace PAGE_URL with your page's canonical URL variable
-                            this.page.identifier = "zhengdan"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-                            };
-                            
-                            (function() { // DON'T EDIT BELOW THIS LINE
-                            var d = document, s = d.createElement('script');
-                            s.src = 'https://hotzword.disqus.com/embed.js';
-                            s.setAttribute('data-timestamp', +new Date());
-                            (d.head || d.body).appendChild(s);
-                            })();
-                            </script>
-                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                <!-- ****** disqus Area End ****** -->
-   
-	 
 
 	           
 	          </div> <!-- .col-md-8 -->
@@ -189,43 +136,3 @@
 	    		</div>
 	    	</div>
 	    </section>
-	    <footer class="ftco-footer ftco-bg-dark ftco-section">
-          <div class="container px-md-5">
-            
-            <div class="row">
-              <div class="col-md-12">
-
-                <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-              </div>
-            </div>
-          </div>
-        </footer>
-		</div><!-- END COLORLIB-MAIN -->
-	</div><!-- END COLORLIB-PAGE -->
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
-
-  <script src="../js/jquery.min.js"></script>
-  <script src="../js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="../js/popper.min.js"></script>
-  <script src="../js/bootstrap.min.js"></script>
-  <script src="../js/jquery.easing.1.3.js"></script>
-  <script src="../js/jquery.waypoints.min.js"></script>
-  <script src="../js/jquery.stellar.min.js"></script>
-  <script src="../js/owl.carousel.min.js"></script>
-  <script src="../js/jquery.magnific-popup.min.js"></script>
-  <script src="../js/aos.js"></script>
-  <script src="../js/jquery.animateNumber.min.js"></script>
-  <script src="../js/bootstrap-datepicker.js"></script>
-  <script src="../js/jquery.timepicker.min.js"></script>
-  <script src="../js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="../js/google-map.js"></script>
-  <script src="../js/main.js"></script>
-    
-  </body>
-</html>

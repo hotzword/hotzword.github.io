@@ -1,0 +1,87 @@
+---
+layout: default
+---
+
+			<section class="ftco-section  section_padding_0_80">
+	    	<div class="container justify-content-center">
+	    		<div class="row">
+	    			<div class="col-lg-12 ftco-animate">
+
+
+                <h2 class="mb-3 font-weight-bold"> {{ page.title }}</h2>
+
+                <img src=" {{base_url}}/{{ page.pic}} " alt="{{ page.title }}" style="width:100%; height: auto;">
+
+                     {{ content }}
+
+            <!-- Ingredients -->
+                    <div class="col-12 col-lg-8">
+                        <div class="ingredients">
+                            <h3 class="mb-3 mt-5 font-weight-bold">Ingredients</h3>
+
+                            {% for item in page.ingredients %}
+                            <!-- Custom Checkbox -->
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                <label class="custom-control-label" for="customCheck1"> {{ item }} </label>
+                            </div>
+                            {% endfor %}
+
+                            
+
+                            <p>{{ page.ingredient_note }}</p>
+
+                        </div>
+                    </div>
+
+
+            <!-- Preparation Step -->
+            <div class="col-12 col-lg-8">
+              <h3 class="mb-3 mt-5 font-weight-bold">STEPS</h3>
+
+            {% for item in page.steps %}
+	            <div class=" single-preparation-step d-flex">
+                    <h4> {{ forloop.index }}.</h4>
+                        <p> {{ item.txt }} </p>
+                </div>
+
+                {% if item.pic!= nil %}
+                <img src=" {{base_url}}/{{ item.pic}} " style="width:100%; height: auto;">
+                {% endif %}
+
+            {% endfor %}
+
+</div>
+
+
+               
+          <!-- ****** Steps area end ****** -->
+
+                <h3 class="mb-3 mt-5 font-weight-bold">TIPS</h3>
+                <p>  </p>
+
+            {% for item in page.tips %}
+                    <p> {{ item }} </p>
+            {% endfor %}
+                <!-- {{ page.tips }} -->
+
+
+	            <div class="tag-widget post-tag-container mb-5 mt-5">
+	              <div class="tagcloud">
+                    {% for item in page.tags %}
+	                <a class="tag-cloud-link">{{ item }}</a>
+	                {% endfor %}
+	              </div>
+	            </div>
+	                  
+	           
+	          </div> <!-- .col-md-8 -->
+	    			<div class="col-lg-4 sidebar ftco-animate">
+	           
+	         
+	           
+
+	          </div><!-- END COL -->
+	    		</div>
+	    	</div>
+	    </section>
