@@ -2,10 +2,11 @@
 layout: recipe_post
 title:  Hotzword Fried Rice | 什锦炒饭
 date:   2019-7-12
-pic:    ../images/recipe/chaofan.jpg\
+pic:    ../images/recipe/chaofan.jpg
 intro: Keep everything dry and you will get the perfect fried rice.
 level: Medium
 time: 30 min
+<!--permalink: /:title-->
 tags:
     - eggs
     - stir fry
