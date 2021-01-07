@@ -53,10 +53,10 @@
 			<h1 id="colorlib-logo"><a href="/">Hotzword<span>.</span> Food Blog </a> <a href="index.html"><span>“好吃娃”</span> </a></h1>
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
-					<li ><a href="/" {% if page.url == "/"  %}class="colorlib-active"{% endif %}>Home</a></li>
-					<li ><a href="/#recipe" {% if page.url == "/#recipe" %}class="colorlib-active"{% endif %}>Recipe</a></li>
-					<li><a href="restaurant.html" {% if page.url == "/restaurant.html" %}class="colorlib-active"{% endif %}>Restaurant</a></li>
-					<li><a href="about.html" {% if page.url == "/about.html" %}class="colorlib-active"{% endif %}>About</a></li>
+					<li  {% if page.url == '/' %}class="colorlib-active"{% endif %}><a href="{{site.baseurl}}/" >Home</a></li>
+					<li class="{% if page.url contains 'recipe'  %}colorlib-active{% endif %}"><a href="{{site.baseurl}}/#recipe" >Recipe</a></li>
+					<li class="{% if page.url == '/restaurant'  %}colorlib-active{% endif %}"><a href="{{site.baseurl}}/restaurant.html" >Restaurant</a></li>
+					<li class="{% if page.url == '/about'  %}colorlib-active{% endif %}"><a href="{{site.baseurl}}/about.html" >About</a></li>
                 </ul>
 			</nav>
 			<div class="colorlib-footer">
